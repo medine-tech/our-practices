@@ -23,12 +23,7 @@ const makeUser = () => {
     firstName: "Jose",
     lastName: "Quilarque",
     role: "user",
-    posts: [
-      {
-        id: 1,
-        title: "titulo del post",
-      },
-    ],
+    posts: [{ id: 1, title: "titulo del post"}],
   };
 };
 
