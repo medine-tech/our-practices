@@ -47,7 +47,7 @@ chokidar.watch(exerciseFile).on("all", (event, path) => {
       });
     }
     console.log("Checking types...");
-    execSync(`tsc "${exerciseFile}" --noEmit --strict`, {
+    execSync(`tsc "${exerciseFile}" --noEmit --strict --skipLibCheck`, {
       stdio: "inherit",
     });
     console.log("Typecheck complete. You finished the exercise!");
