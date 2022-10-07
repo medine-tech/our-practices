@@ -96,7 +96,10 @@
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
   },
+
+  "extends": "tsconfig/base.json",
   "include": [
     "src"
-  ]
+  ],
+  "exclude": ["dist", "build", "node_modules"]
 }
