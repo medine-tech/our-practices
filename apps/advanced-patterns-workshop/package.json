@@ -16,7 +16,8 @@
     "e": "npm run exercise",
     "solution": "cross-env SOLUTION=true node scripts/exercise.js",
     "s": "npm run solution",
-    "e-01": "npm run exercise 01"
+    "e-01": "npm run exercise 01",
+    "e-02": "npm run exercise 02"
   },
   "dependencies": {
     "@types/express": "^4.17.14",

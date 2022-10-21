@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+
 import { Brand } from "../helpers/Brand";
 
 type Password = Brand<string, "Password">;
@@ -14,7 +15,7 @@ export const validateValues = (values: { email: string; password: string }) => {
 
   return {
     email: values.email,
-    password: values.password,
+    password: values.password
   };
 };
 
@@ -33,7 +34,7 @@ describe("onSubmitHandler", () => {
     expect(() => {
       onSubmitHandler({
         email: "invalid",
-        password: "12345678",
+        password: "12345678"
       });
     }).toThrowError("Email invalid");
   });
@@ -42,7 +43,7 @@ describe("onSubmitHandler", () => {
     expect(() => {
       onSubmitHandler({
         email: "whatever@example.com",
-        password: "1234567",
+        password: "1234567"
       });
     }).toThrowError("Password not long enough");
   });
